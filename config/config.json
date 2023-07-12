@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "fzpcjouk",
+    "password": "mP0OkadJpPBNuGVNM_O5dMUWJrzKYL40",
+    "database": "fzpcjouk",
+    "host": "rajje.db.elephantsql.com",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "database_test",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "database_production",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
