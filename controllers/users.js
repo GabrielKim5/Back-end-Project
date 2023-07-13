@@ -9,7 +9,7 @@ const getAllUsers = async (req, res, next) => {
 };
 
 const createUser = async (req, res) => {
-  res.render('create', { title: 'Create a User' });
+  res.render('create', { title: 'Create Employee' });
 }
 
 const postCreateUser = async (req, res) => {
@@ -27,7 +27,11 @@ const postCreateUser = async (req, res) => {
     email,
   });
   console.log("New user's auto-generated ID:", newUser.id);
-  res.send('User created');
+  // res.send('User created');
+
+  res.redirect('/users/login')
+  console.log('SHOULD TAKE TO USER LOGIN PAGE')
+  //res.redirect(/users/login)
 };
 
 const getUserByID = (req, res) => {
@@ -91,6 +95,8 @@ const postLogin = async (req, res) => {
       } else res.render('login', { title: 'Login', error: 'Passwords do not match' });
     });
   }
+  res.redirect('/users/seatmap')
+  //is going to be res.redirect('/users/seatmap)
 };
 
 
